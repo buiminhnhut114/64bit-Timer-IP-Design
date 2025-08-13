@@ -1,0 +1,266 @@
+# vsim -coverage -l register_rw_check.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit register_rw_check.ucdb; log -r /*;run -all" 
+# Start time: 21:05:50 on Apr 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../rtl/timer_top.v(89): (vopt-2685) [TFMPC] - Too few port connections for 'i_inst'.  Expected 7, found 6.
+# ** Warning: ../rtl/timer_top.v(89): (vopt-2718) [TFMPC] - Missing connection for port 'clear'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.test_bench(fast)
+# coverage save -onexit register_rw_check.ucdb
+#  log -r /*
+# run -all
+# =====================================================================
+# =================[ REGISTER READ/WRITE CHECK  ]======================
+# =====================================================================
+# =====================================================================
+#                             SUCCESS CASE                             
+# =====================================================================
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =        235   [PASS]     :  w_en = 1                                                  
+#  t =        295   [PASS]     :  tim_wdata = 32'haaaaa8af at paddr 12'h000                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =        525   [PASS]     :  r_en = 1                                                  
+#  t =        585   [PASS]     :  tim_rdata = 32'h00000807 at paddr 12'h000                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =        835   [PASS]     :  w_en = 1                                                  
+#  t =        895   [PASS]     :  tim_wdata = 32'haaaaaaaf at paddr 12'h000                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       1125   [PASS]     :  r_en = 1                                                  
+#  t =       1185   [PASS]     :  tim_rdata = 32'h00000807 at paddr 12'h000                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       1435   [PASS]     :  w_en = 1                                                  
+#  t =       1495   [PASS]     :  tim_wdata = 32'hbbbbbbbb at paddr 12'h004                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       1725   [PASS]     :  r_en = 1                                                  
+#  t =       1785   [PASS]     :  tim_rdata = 32'h00000000 at paddr 12'h004                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       2035   [PASS]     :  w_en = 1                                                  
+#  t =       2095   [PASS]     :  tim_wdata = 32'hcccccccc at paddr 12'h008                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       2325   [PASS]     :  r_en = 1                                                  
+#  t =       2385   [PASS]     :  tim_rdata = 32'h00000000 at paddr 12'h008                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       2635   [PASS]     :  w_en = 1                                                  
+#  t =       2695   [PASS]     :  tim_wdata = 32'hdddddddd at paddr 12'h00c                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       2925   [PASS]     :  r_en = 1                                                  
+#  t =       2985   [PASS]     :  tim_rdata = 32'hdddddddd at paddr 12'h00c                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       3235   [PASS]     :  w_en = 1                                                  
+#  t =       3295   [PASS]     :  tim_wdata = 32'heeeeeeee at paddr 12'h010                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       3525   [PASS]     :  r_en = 1                                                  
+#  t =       3585   [PASS]     :  tim_rdata = 32'heeeeeeee at paddr 12'h010                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       3835   [PASS]     :  w_en = 1                                                  
+#  t =       3895   [PASS]     :  tim_wdata = 32'hffffffff at paddr 12'h014                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       4125   [PASS]     :  r_en = 1                                                  
+#  t =       4185   [PASS]     :  tim_rdata = 32'h00000001 at paddr 12'h014                 
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       4435   [PASS]     :  w_en = 1                                                  
+#  t =       4495   [PASS]     :  tim_wdata = 32'haaaabbbb at paddr 12'h018                 
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       4725   [PASS]     :  r_en = 1                                                  
+#  t =       4785   [PASS]     :  tim_rdata = 32'h00000000 at paddr 12'h018                 
+# 
+# 
+# 
+# ======================================================================
+#                               FAIL CASE                               
+# ======================================================================
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       5035   [FAIL]     :  w_en = 0  , tim_wdata = 32'haaaaa8af at paddr 12'h000     
+#  t =       5035   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       5275   [FAIL]     :  r_en = 0  , tim_rdata = 32'h00000807 at paddr 12'h000     
+#  t =       5335   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       5585   [FAIL]     :  w_en = 0  , tim_wdata = 32'hbbbbbbbb at paddr 12'h004     
+#  t =       5585   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       5825   [FAIL]     :  r_en = 0  , tim_rdata = 32'h00000000 at paddr 12'h004     
+#  t =       5885   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       6135   [FAIL]     :  w_en = 0  , tim_wdata = 32'hcccccccc at paddr 12'h008     
+#  t =       6135   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       6375   [FAIL]     :  r_en = 0  , tim_rdata = 32'h00000000 at paddr 12'h008     
+#  t =       6435   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       6685   [FAIL]     :  w_en = 0  , tim_wdata = 32'hdddddddd at paddr 12'h00c     
+#  t =       6685   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       6925   [FAIL]     :  r_en = 0  , tim_rdata = 32'hdddddddd at paddr 12'h00c     
+#  t =       6985   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       7235   [FAIL]     :  w_en = 0  , tim_wdata = 32'heeeeeeee at paddr 12'h010     
+#  t =       7235   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       7475   [FAIL]     :  r_en = 0  , tim_rdata = 32'heeeeeeee at paddr 12'h010     
+#  t =       7535   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       7785   [FAIL]     :  w_en = 0  , tim_wdata = 32'hffffffff at paddr 12'h014     
+#  t =       7785   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       8025   [FAIL]     :  r_en = 0  , tim_rdata = 32'h00000001 at paddr 12'h014     
+#  t =       8085   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       8335   [FAIL]     :  w_en = 0  , tim_wdata = 32'haaaabbbb at paddr 12'h018     
+#  t =       8335   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       8575   [FAIL]     :  r_en = 0  , tim_rdata = 32'h00000001 at paddr 12'h018     
+#  t =       8635   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# 
+# =====================================================================
+# ==================[ REGISTER READ/WRITE CHECK ]======================
+# =====================================================================
+# 
+# ==================[ TEST: WRITE REGISTER CHECK ]=====================
+# 
+#  t =       8885   [FAIL]     :  w_en = 0  , tim_wdata = 32'haaaabbbb at paddr 12'h01c     
+#  t =       8885   [EXPECTED] :  w_en = 1  , can not write data => timing error            
+# 
+# ==================[ TEST: READ REGISTER CHECK ]=====================
+# 
+#  t =       9125   [FAIL]     :  r_en = 0  , tim_rdata = 32'h00000001 at paddr 12'h01c     
+#  t =       9185   [EXPECTED] :  r_en = 1  , can not read data => timing error             
+# ** Note: $finish    : ../tb/test_bench.v(50)
+#    Time: 9385 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 21:05:51 on Apr 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

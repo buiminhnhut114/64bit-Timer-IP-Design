@@ -1,0 +1,7 @@
+apb_protocol_check
+counter_64bit_check
+counter_control_div_val_check
+counter_control_timer_div_check
+interrupt_check
+register_initial_check
+register_rw_check

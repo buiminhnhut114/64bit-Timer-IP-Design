@@ -1,0 +1,304 @@
+# vsim -coverage -l counter_ctrl_div_val_check.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit counter_ctrl_div_val_check.ucdb; log -r /*;run -all" 
+# Start time: 22:22:42 on Mar 30,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.test_bench(fast)
+# coverage save -onexit counter_ctrl_div_val_check.ucdb
+#  log -r /*
+# run -all
+# ============================================================================================
+#                             COUNTER CONTROL DIV VALUE CHECK                                 
+# ============================================================================================
+# ============================================================================================
+#                                        FAIL CASE                                            
+# ============================================================================================
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =        285   [FAIL]     : div_en = 0  , timer_en = 0                                 
+#  t =        285   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 2]===============
+# 
+#  t =        445   [FAIL]     : Test bench could run forever                               
+#  t =        455   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =        455   [EXPECTED] : cnt_en = 1    at count = 8'b00000001                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =        635   [FAIL]     : div_en = 0  , timer_en = 1                                 
+#  t =        635   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED ]=================
+# 
+#  t =        795   [FAIL]     : Test bench could run forever                              
+# | t =        805   [FAIL]     : cnt_en = 0  at count = 8'b00000000                         
+# | t =        805   [EXPECTED] : cnt_en = 1  at count = 8'b00000000                         
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =        985   [FAIL]     : div_en = 1  , timer_en = 0                                 
+#  t =        985   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 2]===============
+# 
+#  t =       1145   [FAIL]     : Test bench could run forever                               
+#  t =       1155   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       1155   [EXPECTED] : cnt_en = 1    at count = 8'b00000001                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       1335   [FAIL]     : div_en = 0  , timer_en = 0                                 
+#  t =       1335   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 4]================
+# 
+#  t =       1495   [FAIL]     : Test bench could run forever                               
+#  t =       1505   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       1505   [EXPECTED] : cnt_en = 1    at count = 8'b00000011                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       1685   [FAIL]     : div_en = 0  , timer_en = 1                                 
+#  t =       1685   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 8]=================
+# 
+#  t =       1845   [FAIL]     : Test bench could run forever                               
+#  t =       1855   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       1855   [EXPECTED] : cnt_en = 1    at count = 8'b00000111                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       2035   [FAIL]     : div_en = 1  , timer_en = 0                                 
+#  t =       2035   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 16]================
+# 
+#  t =       2195   [FAIL]     : Test bench could run forever                               
+#  t =       2205   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       2205   [EXPECTED] : cnt_en = 1    at count = 8'b00001111                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       2385   [FAIL]     : div_en = 0  , timer_en = 0                                 
+#  t =       2385   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 32]================
+# 
+#  t =       2545   [FAIL]     : Test bench could run forever                               
+#  t =       2555   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       2555   [EXPECTED] : cnt_en = 1    at count = 8'b00011111                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       2735   [FAIL]     : div_en = 0  , timer_en = 1                                 
+#  t =       2735   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 64]================
+# 
+#  t =       2895   [FAIL]     : Test bench could run forever                               
+#  t =       2905   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       2905   [EXPECTED] : cnt_en = 1    at count = 8'b00111111                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       3085   [FAIL]     : div_en = 1  , timer_en = 0                                 
+#  t =       3085   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 128]================
+# 
+#  t =       3245   [FAIL]     : Test bench could run forever                               
+#  t =       3255   [FAIL]     : cnt_en = 0    at count = 8'b00000000                       
+#  t =       3255   [EXPECTED] : cnt_en = 1    at count = 8'b01111111                       
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       3435   [FAIL]     : div_en = 0  , timer_en = 0                                 
+#  t =       3435   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 256]================
+# 
+#  t =       3595   [FAIL]     : cnt_en = 1    at count = 8'b00000000                       
+#  t =       3595   [EXPECTED] : cnt_en = 1    at count = 8'b11111111                       
+#  t =       3605   [FAIL]     : cnt_en = 0   at count = 00000000                           
+#  t =       3605   [EXPECTED] : cnt_en = 1   at count = 2                                  
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       3785   [FAIL]     : div_en = 0  , timer_en = 1                                 
+#  t =       3785   [EXPECTED] : div_en = 1  , timer_en = 1                                 
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 256]================
+# 
+#  t =       3945   [FAIL]     : cnt_en = 1    at count = 8'b00000000                       
+#  t =       3945   [EXPECTED] : cnt_en = 1    at count = 8'b11111111                       
+#  t =       3955   [FAIL]     : cnt_en = 0   at count = 00000000                           
+#  t =       3955   [EXPECTED] : cnt_en = 1   at count = 2                                  
+# ============================================================================================
+#                                        SUCCESS CASE                                         
+# ============================================================================================
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =       4135   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED ]=================
+# 
+#  t =      16950   [PASS]     : Waiting for cnt_en is asserted                             
+# | t =      16960   [PASS]     : cnt_en = 1  at count = 8'b00000000                         
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      17135   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 2]===============
+# 
+#  t =      17325   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      17335   [PASS]     : cnt_en = 1  at count = 8'b00000001                         
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      17535   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 4]================
+# 
+#  t =      17725   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      17735   [PASS]     : cnt_en = 1  at count = 00000011                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      17935   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 8]=================
+# 
+#  t =      18325   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      18335   [PASS]     : cnt_en = 1  at count = 00000111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      18535   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 16]================
+# 
+#  t =      19125   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      19135   [PASS]     : cnt_en = 1  at count = 00001111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      19335   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 32]================
+# 
+#  t =      20725   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      20735   [PASS]     : cnt_en = 1  at count = 00011111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      20935   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 64]================
+# 
+#  t =      23925   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      23935   [PASS]     : cnt_en = 1  at count = 00111111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      24135   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 128]================
+# 
+#  t =      30325   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      30335   [PASS]     : cnt_en = 1  at count = 01111111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      30535   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 256]================
+# 
+#  t =      43125   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      43135   [PASS]     : cnt_en = 1  at count = 11111111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      43335   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# =================[ TEST: COUTING SPEED IS NOT DIVIDED BY 256]================
+# 
+#  t =      55925   [PASS]     : Waiting for cnt_en is asserted                             
+#  t =      55935   [PASS]     : cnt_en = 1  at count = 11111111                            
+# 
+# ==========================================================================
+# ===================[  COUNTER CONTROL DIV_VALUE CHECK ]===================
+# ==========================================================================
+# 
+#  t =      56135   [PASS]     : div_en = 1 , timer_en = 1                                  
+# 
+# ============================================================================================
+# ======================[ TEST: COUNTING SPEED IS IN PROHIBIT SETTINGS ]======================
+# ============================================================================================
+# ===========[ When setting prohibit value, div_val is remained the previous state ]==========
+# ============================================================================================
+# 
+# ** Note: $finish    : ../tb/test_bench.v(50)
+#    Time: 56295 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 22:22:43 on Mar 30,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

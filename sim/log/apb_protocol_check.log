@@ -1,0 +1,67 @@
+# vsim -coverage -l apb_protocol_check.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit apb_protocol_check.ucdb; log -r /*;run -all" 
+# Start time: 07:05:42 on Apr 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: ../rtl/timer_top.v(89): (vopt-2685) [TFMPC] - Too few port connections for 'i_inst'.  Expected 7, found 6.
+# ** Warning: ../rtl/timer_top.v(89): (vopt-2718) [TFMPC] - Missing connection for port 'clear'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.test_bench(fast)
+# coverage save -onexit apb_protocol_check.ucdb
+#  log -r /*
+# run -all
+# 
+# =======================[ APB PROTOCOL CHECK ]======================
+# 
+# 
+# ===========================[ FAIL CASE  ]==========================
+# 
+# 
+# =======================[ APB PROTOCOL CHECK ]=====================
+# ==================================================================
+# ==========================[ PREADY SIGNAL ]=======================
+# 
+#  t =        225   [FAIL]:   pready = 0. EXPECTED: pready = 1'b1               
+# 
+# =======================[ TEST: APB WRITE CHECK ]==================
+# 
+#  t =        225   [FAIL]:   w_en = 0. EXPECTED: w_en = 1'b1                   
+# 
+# ========================[ TEST: APB READ CHECK ]==================
+# 
+#  t =        435   [FAIL]:   r_en = 0. EXPECTED: r_en = 1'b1                   
+# 
+# ==========================[ SUCCESS CASE ]=========================
+# 
+# 
+# =======================[ APB PROTOCOL CHECK ]=====================
+# ==================================================================
+# ==========================[ PREADY SIGNAL ]=======================
+# 
+#  t =        625   [PASS]:   pready = 1'b1                                      
+# 
+# =======================[ TEST: APB WRITE CHECK ]==================
+# 
+#  t =        625   [PASS]:   w_en = 1'b1                                        
+# 
+# ========================[ TEST: APB READ CHECK ]==================
+# 
+#  t =        835   [PASS]:   r_en = 1'b1                                        
+# ** Note: $finish    : ../tb/test_bench.v(50)
+#    Time: 975 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 07:05:43 on Apr 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

@@ -1,0 +1,45 @@
+# vsim -debugDB -l case3.log -voptargs="+access" -assertdebug -c test_bench -do "log -r /*;run -all;" 
+# Start time: 10:26:59 on Mar 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-4308) Enabling visibility using +acc is recommended with debug flow.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.test_bench(fast)
+# Loading work.cnt_top(fast)
+# Loading work.regset(fast)
+# Loading work.counter(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+# run -all
+# ====================================
+# ==== Case 3: check R/W F ===========
+# ====================================
+# [INFO] RW check task
+# Write data = ffffffff at addr: 00000004
+# ------------------------------------------------
+# t=       226 PASS: rdata = 00000000 at addr 004 is correct
+# ------------------------------------------------
+# [INFO] RW check task
+# Write data = ffffffff at addr: 00000000
+# ------------------------------------------------
+# t=       426 PASS: rdata = 00000003 at addr 000 is correct
+# ------------------------------------------------
+# ** Note: $finish    : ../tb/test_bench.v(99)
+#    Time: 575 ns  Iteration: 0  Instance: /test_bench
+# End time: 10:27:00 on Mar 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
