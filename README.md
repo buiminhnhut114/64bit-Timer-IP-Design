@@ -55,5 +55,5 @@ docs/        # Documentation and diagrams
 
 ## Author
 **Bui Minh Nhut**  
-- Email: your_email_here  
-- GitHub: your_github_profile_link
+- Email: buiminhnhut114@gmail.com 
+- GitHub: https://github.com/buiminhnhut114
